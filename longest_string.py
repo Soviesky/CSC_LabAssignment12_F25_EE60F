@@ -1,7 +1,6 @@
 # This program sends a list of strings into function `longest_string()`
 # The function returns the index of the longest string in the list.
 
-
 def longest_string(strings):
     """
     Returns the longest string in the given list of strings.
@@ -14,7 +13,10 @@ def longest_string(strings):
 
     # TODO: write a loop, if the string in current iteration is longer
     # update the variable `index_of_longest`
-
+for i in range(1, len(strings)):
+        if len(strings[i]) > len(strings[index_of_longest]):
+            iindex_of_longest = i
+    
     return index_of_longest
 
 
